@@ -49,4 +49,3 @@ module AppRoR
                    request_specs: false
 end
 end
-end

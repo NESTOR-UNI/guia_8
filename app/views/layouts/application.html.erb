@@ -1,30 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title><%= full_title(yield(:title)) %></title>  </head>
-    <title><%= content_for(:title) || "App Ro R" %></title> <meta name="viewport" content="width=device-width,initial-scale=1">
-    ```
-
-La estructura correcta, siguiendo la guía, es usar **solo una** etiqueta `<title>` que llama al método `full_title(yield(:title))`.
-
-Para solucionarlo, debes **eliminar la etiqueta de título redundante** y asegurarte de que la estructura del `head` sea correcta.
-
----
-
-## 🛠️ Solución en `application.html.erb`
-
-Reemplaza todo el contenido que me proporcionaste con la siguiente estructura. La clave es **mantener solo la línea que llama a `full_title`**  dentro del bloque `<head>`.
-
-**Tu archivo `app/views/layouts/application.html.erb` debe quedar así:**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
     <title><%= full_title(yield(:title)) %></title> 
+    
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

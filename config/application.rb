@@ -48,6 +48,5 @@ module AppRoR
                    controller_specs: true,
                    request_specs: false
 end
-
   end
 end
